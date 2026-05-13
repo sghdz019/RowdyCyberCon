@@ -1,0 +1,77 @@
+.about-section { background: var(--bg); position: relative; z-index: 1; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* Terminal */
+.about-visual {
+  position: relative;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 2rem;
+  overflow: hidden;
+}
+.about-visual::before {
+  content: '> RCC_2026.exe';
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  color: var(--cyan);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.terminal-line {
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  color: var(--text-dim);
+  padding: .2rem 0;
+}
+.terminal-line.mt { margin-top: .8rem; }
+.terminal-line .prompt { color: var(--green); }
+.terminal-line .cmd   { color: var(--text); }
+.terminal-line .out   { color: var(--orange); }
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background: var(--cyan);
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+}
+
+/* FAQ */
+.faq-list { margin-top: 2rem; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+
+.faq-q {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.faq-q::after { content: '+'; color: var(--cyan); font-size: 1.2rem; }
+.faq-q.open::after { content: '−'; }
+
+.faq-a {
+  font-size: .9rem;
+  color: var(--text-dim);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease, padding .3s ease;
+}
+.faq-a.open { max-height: 200px; padding-top: .6rem; }
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; }
+}

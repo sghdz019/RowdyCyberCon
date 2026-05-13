@@ -1,0 +1,40 @@
+.sponsors-section {
+  background: var(--surface);
+  padding: 4rem 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.sponsors-label {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.marquee-wrap { overflow: hidden; }
+
+.marquee {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+.marquee-item {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--text-dim);
+  letter-spacing: .05em;
+  white-space: nowrap;
+  transition: color .2s;
+}
+.marquee-item:hover { color: var(--orange); }
+
+.marquee-sep { color: var(--border); font-size: 1.5rem; }

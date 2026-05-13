@@ -1,0 +1,31 @@
+.tracks-section { background: var(--bg); position: relative; z-index: 1; }
+
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.track-card {
+  border: 1px solid var(--border);
+  padding: 2rem;
+  background: var(--surface);
+  transition: border-color .25s;
+}
+.track-card:hover { border-color: var(--orange); }
+
+.track-num {
+  font-family: var(--font-mono);
+  font-size: .65rem;
+  color: var(--orange);
+  letter-spacing: .2em;
+  margin-bottom: .8rem;
+}
+.track-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: .6rem;
+}
+.track-desc { font-size: .85rem; color: var(--text-dim); }

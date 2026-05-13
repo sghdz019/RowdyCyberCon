@@ -1,0 +1,99 @@
+.sponsor-section { background: var(--surface); position: relative; z-index: 1; }
+
+.tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.tier-card {
+  border: 1px solid var(--border);
+  padding: 2rem;
+  background: var(--bg2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform .2s;
+}
+.tier-card:hover { transform: translateY(-4px); }
+.tier-card.featured {
+  border-color: var(--orange);
+  background: linear-gradient(160deg, rgba(255,95,31,.08), var(--bg2));
+}
+
+.tier-badge {
+  font-family: var(--font-mono);
+  font-size: .65rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  padding: .25rem .7rem;
+  width: fit-content;
+}
+.tier-badge.bronze  { background: rgba(205,127,50,.15); color: #cd7f32; border: 1px solid #cd7f32; }
+.tier-badge.silver  { background: rgba(192,192,192,.15); color: #c0c0c0; border: 1px solid #c0c0c0; }
+.tier-badge.gold    { background: rgba(255,215,0,.15);   color: #ffd700; border: 1px solid #ffd700; }
+.tier-badge.platinum{ background: rgba(0,229,255,.15);   color: var(--cyan); border: 1px solid var(--cyan); }
+
+.tier-price {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: var(--text);
+}
+.tier-price span { font-size: 1rem; color: var(--text-dim); font-weight: 400; }
+
+.tier-perks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  flex: 1;
+}
+.tier-perks li {
+  font-size: .85rem;
+  color: var(--text-dim);
+  padding-left: 1.2rem;
+  position: relative;
+}
+.tier-perks li::before {
+  content: '▸';
+  color: var(--cyan);
+  position: absolute;
+  left: 0;
+}
+
+.tier-cta {
+  margin-top: auto;
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .6rem 1rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: border-color .2s, color .2s;
+  display: block;
+}
+.tier-cta:hover,
+.tier-card.featured .tier-cta {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.sponsor-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+.sponsor-note {
+  font-family: var(--font-mono);
+  font-size: .85rem;
+  color: var(--text-dim);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .tiers-grid { grid-template-columns: 1fr; }
+}
