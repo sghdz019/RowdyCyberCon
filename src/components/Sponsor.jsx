@@ -6,44 +6,54 @@ import './Sponsor.css';
 const TIERS = [
   {
     badge: 'bronze',
-    label: 'Bronze',
-    price: '$$$',
+    label: 'Protector',
+    price: '$750',
     perks: [
-      'Everything...'
+      'Recruiting Booth',
+      'Logo on Website',
+      'Ceremony Spotlight'
     ],
-    featured: false,
+    featured: true,
   },
   {
     badge: 'silver',
-    label: 'Silver',
-    price: '$$$',
+    label: 'Sentinel',
+    price: '$1,500',
     perks: [
-      'Everything in Bronze'
+      'Everything in Protector',
+      'Social Media Posts',
+      'Logo on Marketing Materials',
+      "Logo on T-Shirt"
     ],
-    featured: false,
+    featured: true,
   },
   {
     badge: 'gold',
-    label: 'Gold',
-    price: '$$$',
+    label: 'Guardian',
+    price: '$3,500',
     perks: [
-      'Everything in Silver'
+      'Everything in Sentinal',
+      'Prominent Logo Placement',
+      'Resume Book Access'
     ],
     featured: true,
   },
   {
     badge: 'platinum',
-    label: 'Platinum',
-    price: '$$$$',
+    label: 'Defender',
+    price: '$5,000',
     perks: [
-      'Everything in Gold'
+      'Everything in Guardian',
+      'Thank You Tribute',
+      'Photo Book',
+      'Year Round Updates'
     ],
-    featured: false,
+    featured: true,
   },
 ];
 
 // ── Change this email ───────────────────────────────────────────
-const CONTACT_EMAIL = 'sponsor@rowdycybercon.com';
+const CONTACT_EMAIL = 'pr@rowdycybercon.org';
 
 export default function Sponsor() {
   const labelRef = useReveal();
@@ -77,7 +87,7 @@ export default function Sponsor() {
 
         <div className="sponsor-cta reveal" ref={ctaRef}>
           <p className="sponsor-note">
-            Interested in something different - reach out and we'll get started on something great!
+            Interested in something different - reach out and we'll create a custom package!
           </p>
           <a className="btn-primary" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
         </div>

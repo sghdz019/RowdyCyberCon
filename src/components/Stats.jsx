@@ -4,8 +4,8 @@ import './Stats.css';
 
 // ── Edit these to update your numbers ──────────────────────────
 const STATS = [
-  { num: '300+',  label: 'Attendees Expected',      color: ''      },
-  { num: '12+',   label: 'Universities Represented', color: 'cyan'  },
+  { num: '250+',  label: 'Attendees Expected',      color: ''      },
+  { num: '10+',   label: 'Universities Represented', color: 'cyan'  },
   { num: '24',    label: 'Hour CTF Competition',     color: 'green' },
   { num: '8+',    label: 'Industry Speakers',        color: ''      },
   { num: '$5k+',  label: 'In Prizes',                color: 'cyan'  },
