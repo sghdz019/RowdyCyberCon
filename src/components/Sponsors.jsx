@@ -12,7 +12,6 @@ const SPONSORS = [
 ];
 
 export default function Sponsors() {
-  // Duplicate the list so the marquee loops seamlessly
   const items = [...SPONSORS, ...SPONSORS];
 
   return (

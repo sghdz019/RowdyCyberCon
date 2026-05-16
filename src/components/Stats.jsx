@@ -4,12 +4,13 @@ import './Stats.css';
 
 // ── Edit these to update your numbers ──────────────────────────
 const STATS = [
-  { num: '250+',  label: 'Attendees Expected',      color: ''      },
-  { num: '10+',   label: 'Universities Represented', color: 'cyan'  },
+  { num: '250+',  label: 'Attendees',                color: ''      },
+  { num: '9',     label: 'Sponsors',                 color: 'cyan'  },
   { num: '24',    label: 'Hour CTF Competition',     color: 'green' },
-  { num: '8+',    label: 'Industry Speakers',        color: ''      },
-  { num: '$5k+',  label: 'In Prizes',                color: 'cyan'  },
+  { num: '12',    label: 'Workshops',                color: ''      },
+  { num: '15',    label: 'Organizers',               color: 'cyan'  },
   { num: '100%',  label: 'Free to Attend',           color: 'green' },
+  { num: '25',    label: 'Volunteers',               color:'cyan'}
 ];
 
 export default function Stats() {
@@ -21,7 +22,7 @@ export default function Stats() {
   return (
     <section id="stats" className="stats-section">
       <div className="section-inner">
-        <div className="section-label" ref={labelRef}>Impact Metrics</div>
+        <div className="section-label" ref={labelRef}>Spring 2026 Impact Metrics</div>
         <h2 className="section-title" ref={titleRef}>By the Numbers</h2>
         <p className="section-desc" ref={descRef}>
           Rowdy CyberCon brings together the best cybersecurity minds in South Texas.

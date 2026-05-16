@@ -69,7 +69,7 @@ export default function About() {
             <div className="terminal-line"><span className="out">Building SA's cyber community</span></div>
             <div className="terminal-line"><span className="out">one flag at a time.</span></div>
             <div className="terminal-line mt"><span className="prompt">▶ </span><span className="cmd">date</span></div>
-            <div className="terminal-line"><span className="out">Fall 2026</span></div>
+            <div className="terminal-line"><span className="out">November 7, 2026</span></div>
             <div className="terminal-line mt"><span className="prompt">▶ </span><span className="cmd">nmap -sV utsa.edu</span></div>
             <div className="terminal-line"><span className="out">PORT     STATE  SERVICE</span></div>
             <div className="terminal-line"><span className="out">443/tcp  open   https</span></div>

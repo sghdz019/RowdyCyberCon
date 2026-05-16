@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="hero" className="hero">
       <div className="hero-grid-bg" />
       <div className="hero-glow" />
-      <div className="badge">Fall 2026 &nbsp;·&nbsp; San Antonio, TX</div>
+      <div className="badge">November 7, 2026 &nbsp;·&nbsp; San Antonio, TX</div>
       <h1 className="hero-title">
         <span className="line1">Rowdy</span>
         <span className="line2">CyberCon</span>
