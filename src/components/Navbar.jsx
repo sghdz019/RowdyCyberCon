@@ -18,19 +18,21 @@ export default function Navbar() {
           <li><a href="#team">Team</a></li>
         </ul>
         <a className="nav-cta" href="#sponsor">Become a Sponsor</a>
-        <div className="hamburger" onClick={() => setMenuOpen(true)}>
+        <div className="hamburger" onClick={() => setMenuOpen(prev => !prev)}>
           <span /><span /><span />
         </div>
       </nav>
 
       {menuOpen && (
-        <div className="mobile-nav open">
-          <button className="mobile-close" onClick={() => setMenuOpen(false)}>✕</button>
-          <a href="#about"      onClick={() => setMenuOpen(false)}>About</a>
-          <a href="#highlights" onClick={() => setMenuOpen(false)}>Highlights</a>
-          <a href="#tracks"     onClick={() => setMenuOpen(false)}>Tracks</a>
-          <a href="#sponsor"    onClick={() => setMenuOpen(false)}>Sponsor</a>
-          <a href="#team"       onClick={() => setMenuOpen(false)}>Team</a>
+        <div className="mobile-nav open" onClick={() => setMenuOpen(false)}>
+          <div onClick={e => e.stopPropagation()} style={{ display: 'contents' }}>
+            <button className="mobile-close" onClick={() => setMenuOpen(false)}>✕</button>
+            <a href="#about"      onClick={() => setMenuOpen(false)}>About</a>
+            <a href="#highlights" onClick={() => setMenuOpen(false)}>Highlights</a>
+            <a href="#tracks"     onClick={() => setMenuOpen(false)}>Tracks</a>
+            <a href="#sponsor"    onClick={() => setMenuOpen(false)}>Sponsor</a>
+            <a href="#team"       onClick={() => setMenuOpen(false)}>Team</a>
+          </div>
         </div>
       )}
     </>
