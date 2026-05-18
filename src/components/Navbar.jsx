@@ -17,7 +17,9 @@ export default function Navbar() {
           <li><a href="#sponsor">Sponsor Us</a></li>
           <li><a href="#team">Team</a></li>
         </ul>
-        <a className="nav-cta" href="#sponsor">Become a Sponsor</a>
+        <a className="nav-cta" href="https://www.rowdycybercon.org/" target="_blank" rel="noreferrer">
+          Register
+        </a>
         <div className="hamburger" onClick={() => setMenuOpen(prev => !prev)}>
           <span /><span /><span />
         </div>
@@ -32,6 +34,7 @@ export default function Navbar() {
             <a href="#tracks"     onClick={() => setMenuOpen(false)}>Tracks</a>
             <a href="#sponsor"    onClick={() => setMenuOpen(false)}>Sponsor</a>
             <a href="#team"       onClick={() => setMenuOpen(false)}>Team</a>
+            <a href="https://www.rowdycybercon.org/" target="_blank"  onClick={() => setMenuOpen(false)}>Register</a>
           </div>
         </div>
       )}
