@@ -34,7 +34,7 @@ export default function Navbar() {
             <a href="#tracks"     onClick={() => setMenuOpen(false)}>Tracks</a>
             <a href="#sponsor"    onClick={() => setMenuOpen(false)}>Sponsor</a>
             <a href="#team"       onClick={() => setMenuOpen(false)}>Team</a>
-            <a href="https://www.rowdycybercon.org/" target="_blank"  onClick={() => setMenuOpen(false)}>Register</a>
+            <a href="https://www.rowdycybercon.org/" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)}>Register</a>
           </div>
         </div>
       )}
